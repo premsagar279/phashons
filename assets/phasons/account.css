@@ -1,0 +1,56 @@
+.sections{
+  margin-bottom: 2rem;
+}
+.vert_centre{
+  border: 1px solid black;
+  height: 200px;
+  display: -ms-flex; 
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab {
+  overflow: hidden;
+  /*border: 1px solid #ccc;*/
+  background-color: #f1f1f1;
+
+
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  width: 16.66%;
+  /*transition: 0.3s;*/ /* for removing the transition of border*/
+  margin-bottom: 5px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+  border-bottom: 5px black solid;
+  margin-bottom: 0px;
+}
+
+.tabcontent.active{
+  display: block;
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}

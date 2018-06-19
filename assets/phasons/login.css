@@ -1,0 +1,10 @@
+#loginbox input{
+    height: 3.5em;
+
+}
+
+#signupbox input{
+    height: 3.5em;
+    border-radius:10px; 
+
+}
