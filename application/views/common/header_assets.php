@@ -47,9 +47,9 @@
 	<!-- ########################################## STYLESHEET START  #############################################-->
 
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-			<link rel="stylesheet" href="<?=site_url('assets/phasons/owl/docs.theme.min.css')?>">
-			<link rel="stylesheet" type="text/css" href="<?=site_url('assets/phasons/main.css')?>">
-			<link rel="stylesheet" type="text/css" href="<?=site_url('assets/phasons/login.css')?>">
+			<link rel="stylesheet" href="<?=base_url('assets/phasons/owl/docs.theme.min.css')?>">
+			<link rel="stylesheet" type="text/css" href="<?=base_url('assets/phasons/main.css')?>">
+			<link rel="stylesheet" type="text/css" href="<?=base_url('assets/phasons/login.css')?>">
 	<?php
 	  if(!empty($css))
 	  {  
@@ -64,7 +64,7 @@
 	  }
 	?>
 	<!-- Owl Stylesheets -->
-			<link rel="stylesheet" href="<?=site_url('assets/phasons/owl/owl.carousel.min.css')?>">
+			<link rel="stylesheet" href="<?=base_url('assets/phasons/owl/owl.carousel.min.css')?>">
 
 	<!-- ########################################## STYLESHEET END ###########################################-->
 
@@ -86,8 +86,8 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 		<!-- owl js -->
-		<script src="<?=site_url('assets/phasons/owl/owl.carousel.js')?>"></script>
-		<script type="text/javascript" src="<?=site_url('assets/js/main.js')?>"></script>
+		<script src="<?=base_url('assets/phasons/owl/owl.carousel.js')?>"></script>
+		<script type="text/javascript" src="<?=base_url('assets/js/main.js')?>"></script>
 
 <?php
   if(!empty($js))
@@ -104,7 +104,7 @@
 
 		<script type="text/javascript">
             function base_url()	{ return "<?= base_url()?>"; }
-            function site_url(uri) { return base_url() + "index.php/" + uri; }
+            function site_url(uri) { return site_url() + uri; }
         </script>
 
 	<!-- ########################################## JAVASCRIPT SRC END  ########################################-->

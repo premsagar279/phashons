@@ -19,12 +19,12 @@
 			'indiv_data'	=>
 			[
 				[
-					'src'	=>	site_url('assets/images/res.jpg'),
+					'src'	=>	base_url('assets/images/res.jpg'),
 					'head'	=>	'Heading',
 					'desc'	=>	'Description',
 				],
 				[
-					'src'	=>	site_url('assets/images/res.jpg'),
+					'src'	=>	base_url('assets/images/res.jpg'),
 					'head'	=>	'Heading',
 					'desc'	=>	'Description',
 				],
@@ -52,7 +52,7 @@ $carousels =
 				[
 					'name'		=>	'adsas',
 					'id'		=>	'1',
-					'src'		=>	site_url('assets/images/ny2.jpg'),
+					'src'		=>	base_url('assets/images/ny2.jpg'),
 					'ac_price'	=>	1000,
 					'discount'	=>	20,
 					'disprice'	=>	800,
@@ -61,7 +61,7 @@ $carousels =
 				[
 					'name'		=>	'adsas',
 					'id'		=>	'2',
-					'src'		=>	site_url('assets/images/ny2.jpg'),
+					'src'		=>	base_url('assets/images/ny2.jpg'),
 					'ac_price'	=>	1000,
 					'discount'	=>	20,
 					'disprice'	=>	800,
@@ -70,7 +70,7 @@ $carousels =
 				[
 					'name'		=>	'adsas',
 					'id'		=>	'2',
-					'src'		=>	site_url('assets/images/ny2.jpg'),
+					'src'		=>	base_url('assets/images/ny2.jpg'),
 					'ac_price'	=>	1000,
 					'discount'	=>	20,
 					'disprice'	=>	800,
@@ -79,7 +79,7 @@ $carousels =
 				[
 					'name'		=>	'adsas',
 					'id'		=>	'2',
-					'src'		=>	site_url('assets/images/ny2.jpg'),
+					'src'		=>	base_url('assets/images/ny2.jpg'),
 					'ac_price'	=>	1000,
 					'discount'	=>	20,
 					'disprice'	=>	800,
@@ -88,7 +88,7 @@ $carousels =
 				[
 					'name'		=>	'adsas',
 					'id'		=>	'2',
-					'src'		=>	site_url('assets/images/ny2.jpg'),
+					'src'		=>	base_url('assets/images/ny2.jpg'),
 					'ac_price'	=>	1000,
 					'discount'	=>	20,
 					'disprice'	=>	800,
@@ -109,7 +109,7 @@ $carousels =
 				[
 					'name'		=>	'adsas',
 					'id'		=>	'1',
-					'src'		=>	site_url('assets/images/ny2.jpg'),
+					'src'		=>	base_url('assets/images/ny2.jpg'),
 					'ac_price'	=>	1000,
 					'discount'	=>	20,
 					'disprice'	=>	800,
@@ -118,7 +118,7 @@ $carousels =
 				[
 					'name'		=>	'adsas',
 					'id'		=>	'2',
-					'src'		=>	site_url('assets/images/ny2.jpg'),
+					'src'		=>	base_url('assets/images/ny2.jpg'),
 					'ac_price'	=>	1000,
 					'discount'	=>	20,
 					'disprice'	=>	800,
