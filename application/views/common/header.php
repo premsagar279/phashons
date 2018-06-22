@@ -96,7 +96,7 @@
 			<? }
 			else{ ?>
 				<li class="dropdown" style="margin-right: 15px; padding-top:0px;">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><img class="img img-responsive img-circle" src=<?=$user->profile_image?> style="height:30px;width:auto" alt="hello"></a>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><img class="img img-responsive img-circle" src="<?=$user->profile_image?>" style="height:30px;width:auto" alt="hello"></a>
 					<ul class="dropdown-menu">
 						<li><center>HI <?=$user->fname." ".$user->lname?></center></li>
 						<li><hr style="margin: 0px;"></li>

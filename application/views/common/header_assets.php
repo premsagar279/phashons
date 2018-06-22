@@ -104,7 +104,7 @@
 
 		<script type="text/javascript">
             function base_url()	{ return "<?= base_url()?>"; }
-            function site_url(uri) { return site_url() + uri; }
+            function site_url(uri) { return base_url() + "index.php/" + uri; }
         </script>
 
 	<!-- ########################################## JAVASCRIPT SRC END  ########################################-->
