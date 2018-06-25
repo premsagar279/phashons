@@ -24,7 +24,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a  href="home.php">
+				<a  href="<?=site_url()?>">
 					<img src="<?=base_url('assets/logo/phashons_logo.png')?>" style="height:70px; width:auto; margin-bottom:5px;" />
 				</a>
 			</div>
@@ -68,7 +68,7 @@
 				</div>
 			</li>
 
-			<li><a href="design.php" style="text-shadow: 2px 2px #f5ccaa;"><strong>DESIGN YOURSELF</strong ></a></li>
+			<li><a href="<?=site_url('design')?>" style="text-shadow: 2px 2px #f5ccaa;"><strong>DESIGN YOURSELF</strong ></a></li>
 				<!-- wishlist icon -->
 				<li><a href="wishlist.php"><span class="glyphicon glyphicon-heart">
 					<!-- <?php

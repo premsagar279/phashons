@@ -52,7 +52,7 @@
 			<link rel="stylesheet" type="text/css" href="<?=base_url('assets/phasons/login.css')?>">
 	<?php
 	  if(!empty($css))
-	  {  
+	  {
 	  	foreach ($css as $key => $value)
 	  	{
 	     ?>
@@ -97,17 +97,19 @@
 
          <script type="text/javascript" src="<?=$value?>"></script>
 
-       <?		
+       <?
   	}
   }
 ?>
 
 		<script type="text/javascript">
-            function base_url()	{ return "<?= base_url()?>"; }
-            function site_url(uri) { return base_url() + "index.php/" + uri; }
+            function base_url(uri="")	{ return "<?= base_url()?>" + uri; }
+            function site_url(uri="") { return base_url() + "index.php/" + uri; }
+			// function base_url()	{ return "<?= base_url()?>"; }
+			// function site_url() { return base_url() + "index.php/"; }
         </script>
 
 	<!-- ########################################## JAVASCRIPT SRC END  ########################################-->
 
-	
+
 	</head>
