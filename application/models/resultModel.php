@@ -54,7 +54,21 @@ class ResultModel extends CI_Model {
 
 		return $ret;
 	}
-	public function getProducts($cond=''){
+	public function convertCond($OCond){
+		$hash = [
+			'cat'	=>	'C.id',
+			'brand'	=>	'B.id',
+		];
+		$cond=[];
+
+		foreach ($OCond as $key => $value) {
+			$cond[$hash[$key]] = $value;
+		}
+		return $cond;
+	}
+	public function getProducts($OCond=''){
+		$cond = $this->convertCond($OCond);
+
 		$this->db	->select('P.id,P.name,B.name as brand,C.name as category,P.image,P.price,P.discount as dis,((100-P.discount)/100)*P.price as tprice,')
 						->from('products as P')
 						->join('categories as C','C.id = P.cat_id')
