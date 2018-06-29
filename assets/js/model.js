@@ -403,6 +403,9 @@ class Model{
 		this.isTextureReady = false;
 		this.needsUpdate = true;
 	}
+	updateModel(){
+		this.needsUpdate = true;
+	}
 }
 
 

@@ -267,3 +267,30 @@ $(document).ready(function(){
 		clickoutFiresChange:false
 	});
 });
+
+
+// --------------------------------------------Save / load design -------------------------------------------------
+function saveDesign(){
+	var str = JSON.stringify(u);
+	console.log(str);
+	var url = base_url('ajax/AjaxDesign/save_design');
+	$.ajax({
+		url:url,
+		type:'post',
+		data:{
+			save:str,
+			pro_id:2,
+		},
+		success:function(text){
+			// console.log('saved');
+			console.log(text);
+		},
+		error:function(text){
+			// console.log('error');
+			// console.log(text);
+			console.log(text.responseText);
+
+		}
+
+	});
+}

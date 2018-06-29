@@ -151,7 +151,7 @@
 		<!-- ||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||-->
 		<div class="col-md-4">
 			<div id="image-right-pannel">
-
+				<button class="btn btn-info" onclick="saveDesign()">SAVE</button>
 			</div>
 		</div>
 	</div>

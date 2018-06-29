@@ -29,7 +29,7 @@ class Users_model extends CI_Model
 			$password = $this->authorization->encode_password($pass, $row->created_date);
 
 			
-			if($password == $row->password )
+			if($password === $row->password )
 			{
 
 				// Login Successful
@@ -37,7 +37,7 @@ class Users_model extends CI_Model
 				// $user_id = preg_replace("/[^a-zA-Z0-9_\-]+/", "", $user_id);
 				
 
-				$this->set_session($user_id, $password);
+				$this->set_session($user_id, $password,$row->id);
 				return true;
 			}
 
@@ -68,12 +68,14 @@ class Users_model extends CI_Model
 
 	}
 	
-	private function set_session($user_id, $password)
+	private function set_session($user_id, $password,$id_num)
 	{
 		$this->session->set_userdata(
 		 array( 
-			'id'=>$user_id,'isLoggedIn'=>true ,
+			'id'=>$user_id,
+			'isLoggedIn'=>true ,
 			'login_string'=> hash('sha512', $password . $_SERVER['HTTP_USER_AGENT']),
+			'id_num'	=>	$id_num,
 			)
 		);
 	}

@@ -58,8 +58,9 @@ window.onload = function(){
 		var texture = textureLoader.load( base_url('assets/textures/3.jpg'));
 		var count=0;
 		var loader = new THREE.OBJLoader();
+		var modelName = "assets/models/3/roundneckfullmale.obj";
 		// console.log(base_url()+"models/3/roundneck full sleeve male.obj");
-		loader.load (base_url("assets/models/3/roundneckfullmale.obj"), function ( object ) {
+		loader.load (base_url(modelName), function ( object ) {
 			geo = object;
 			var objBbox = new THREE.Box3().setFromObject(object);
 
@@ -172,6 +173,6 @@ window.onload = function(){
 		}
 		GameLoop();
 
-
+		
 
 	};
